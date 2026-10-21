@@ -22,3 +22,4 @@ apps/web/playwright-report/
 apps/mobile/dist-check/
 apps/mobile/expo-env.d.ts
 .sandbox-ca.crt
+dump.rdb

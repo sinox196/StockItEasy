@@ -124,7 +124,9 @@ export function formatMoney(value: string | number | null | undefined, locale: A
     const num = new Intl.NumberFormat(INTL_LOCALE[locale], {
       minimumFractionDigits: digits,
       maximumFractionDigits: digits,
-    }).format(n);
+      // Group thousands even for 4-digit amounts (some locales skip it by default).
+      useGrouping: 'always',
+    } as unknown as Intl.NumberFormatOptions).format(n);
     return locale === 'ar-TN' ? `${num} د.ت` : `${num} DT`;
   }
   return new Intl.NumberFormat(INTL_LOCALE[locale], {

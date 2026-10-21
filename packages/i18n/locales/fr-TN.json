@@ -612,7 +612,8 @@
       "minOrderQty": "Minimum de commande",
       "packSize": "Conditionnement",
       "excludedStockoutDays": "Jours de rupture exclus de l'historique"
-    }
+    },
+    "method": "Méthode"
   },
   "notifications": {
     "title": "Notifications",
@@ -804,7 +805,8 @@
     "faq3a": "Les comptages et ajustements mobiles sont enregistrés localement puis synchronisés, avec détection des conflits.",
     "contactTitle": "Contact",
     "contactText": "Une question, une démo ? Écrivez-nous.",
-    "footer": "© {year} StockItEasy. Tous droits réservés."
+    "footer": "© {year} StockItEasy. Tous droits réservés.",
+    "navFeatures": "Fonctionnalités"
   },
   "errors": {
     "UNKNOWN": "Une erreur inattendue est survenue.",
@@ -866,5 +868,10 @@
     "resetBody": "Bonjour {name},\n\nPour choisir un nouveau mot de passe, ouvrez ce lien :\n{link}\n\nCe lien expire dans 1 heure. Si vous n'êtes pas à l'origine de cette demande, ignorez ce message.",
     "inviteSubject": "{inviter} vous invite sur StockItEasy",
     "inviteBody": "Bonjour,\n\n{inviter} vous invite à rejoindre {organization} sur StockItEasy.\nAcceptez l'invitation :\n{link}\n\nCe lien expire dans 7 jours."
+  },
+  "admin": {
+    "title": "Console Super Admin",
+    "organizations": "Entreprises",
+    "users": "Utilisateurs"
   }
 }

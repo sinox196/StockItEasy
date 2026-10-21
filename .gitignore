@@ -16,3 +16,6 @@ __pycache__/
 apps/mobile/ios/
 apps/mobile/android/
 uploads/
+next-env.d.ts
+apps/web/test-results/
+apps/web/playwright-report/

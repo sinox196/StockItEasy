@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens (RGB triplets) — mirror packages/design-tokens. */
+@layer base {
+  :root {
+    --background: 248 250 252;
+    --surface: 255 255 255;
+    --surface-muted: 241 245 249;
+    --border: 226 232 240;
+    --text: 15 23 42;
+    --text-muted: 100 116 139;
+    --primary: 15 23 42;
+    --primary-text: 255 255 255;
+    --secondary: 37 99 235;
+    --secondary-text: 255 255 255;
+    --accent: 16 185 129;
+    --accent-text: 2 44 34;
+    --warning: 245 158 11;
+    --warning-soft: 255 251 235;
+    --danger: 239 68 68;
+    --danger-soft: 254 242 242;
+    --success: 5 150 105;
+    --success-soft: 236 253 245;
+    --info: 37 99 235;
+    --info-soft: 239 246 255;
+    --font-inter: 'Inter Variable';
+    --font-arabic: 'IBM Plex Sans Arabic';
+    color-scheme: light;
+  }
+  .dark {
+    --background: 2 6 23;
+    --surface: 15 23 42;
+    --surface-muted: 30 41 59;
+    --border: 51 65 85;
+    --text: 248 250 252;
+    --text-muted: 148 163 184;
+    --primary: 59 130 246;
+    --primary-text: 255 255 255;
+    --secondary: 59 130 246;
+    --secondary-text: 255 255 255;
+    --accent: 52 211 153;
+    --accent-text: 2 44 34;
+    --warning: 245 158 11;
+    --warning-soft: 58 42 6;
+    --danger: 239 68 68;
+    --danger-soft: 59 17 17;
+    --success: 52 211 153;
+    --success-soft: 6 40 29;
+    --info: 96 165 250;
+    --info-soft: 11 30 63;
+    color-scheme: dark;
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-background text-foreground antialiased; font-feature-settings: 'cv11', 'ss01'; }
+  html[lang='ar-TN'] body { font-family: var(--font-arabic), var(--font-inter), sans-serif; }
+  :focus-visible { @apply outline-none ring-2 ring-secondary/60 ring-offset-2 ring-offset-background; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .num { font-variant-numeric: tabular-nums; unicode-bidi: isolate; direction: ltr; }
+  .card { @apply rounded-xl border border-border bg-surface shadow-card; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+}

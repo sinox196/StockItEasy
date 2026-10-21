@@ -612,7 +612,8 @@
       "minOrderQty": "أدنى كمية للطلب",
       "packSize": "التعليب",
       "excludedStockoutDays": "أيّام الستوك فارغ اللي ما تحسبتش"
-    }
+    },
+    "method": "الطريقة"
   },
   "notifications": {
     "title": "التنبيهات",
@@ -804,7 +805,8 @@
     "faq3a": "الحساب والتعديلات في الموبايل يتسجّلو في التليفون ومن بعد يتزامنو، مع كشف التعارضات.",
     "contactTitle": "اتّصل بينا",
     "contactText": "عندك سؤال ولا تحب ديمو؟ اكتبلنا.",
-    "footer": "© {year} StockItEasy. جميع الحقوق محفوظة."
+    "footer": "© {year} StockItEasy. جميع الحقوق محفوظة.",
+    "navFeatures": "المميزات"
   },
   "errors": {
     "UNKNOWN": "صار مشكل موش متوقّع.",
@@ -866,5 +868,10 @@
     "resetBody": "عسلامة {name}،\n\nباش تختار كلمة سرّ جديدة، حلّ الرابط هذا:\n{link}\n\nالرابط صالح ساعة وحدة. كان موش إنت اللي طلبت، ما تعمل شي.",
     "inviteSubject": "{inviter} يستدعيك لـ StockItEasy",
     "inviteBody": "عسلامة،\n\n{inviter} يستدعيك باش تنضمّ لـ {organization} على StockItEasy.\nاقبل الدعوة:\n{link}\n\nالرابط صالح 7 أيّام."
+  },
+  "admin": {
+    "title": "لوحة الإدارة العامة",
+    "organizations": "الشركات",
+    "users": "المستعملين"
   }
 }

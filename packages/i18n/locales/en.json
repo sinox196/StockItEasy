@@ -757,7 +757,10 @@
     "keepMine": "Keep my count",
     "discard": "Discard",
     "applied": "Applied",
-    "rejected": "Rejected"
+    "rejected": "Rejected",
+    "myValue": "My count",
+    "serverValue": "Server value",
+    "download": "Download data"
   },
   "mobile": {
     "home": "Home",

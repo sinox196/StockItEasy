@@ -757,7 +757,10 @@
     "keepMine": "خلّي الحساب متاعي",
     "discard": "نحّي",
     "applied": "تطبّق",
-    "rejected": "ترفض"
+    "rejected": "ترفض",
+    "myValue": "الحساب متاعي",
+    "serverValue": "القيمة في السيرفر",
+    "download": "حمّل المعطيات"
   },
   "mobile": {
     "home": "الرئيسية",

@@ -1,0 +1,45 @@
+{
+  "name": "@stockiteasy/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "bundle:check": "expo export --platform android --output-dir dist-check"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-community/netinfo": "11.4.1",
+    "@stockiteasy/api-client": "workspace:*",
+    "@stockiteasy/design-tokens": "workspace:*",
+    "@stockiteasy/i18n": "workspace:*",
+    "@stockiteasy/shared": "workspace:*",
+    "@tanstack/react-query": "5.90.2",
+    "expo": "54.0.38",
+    "expo-camera": "~17.0.10",
+    "expo-constants": "~18.0.14",
+    "expo-crypto": "~15.0.9",
+    "expo-haptics": "~15.0.8",
+    "expo-linking": "~8.0.12",
+    "expo-localization": "~17.0.9",
+    "expo-router": "~6.0.24",
+    "expo-secure-store": "~15.0.8",
+    "expo-splash-screen": "~31.0.13",
+    "expo-sqlite": "~16.0.10",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}

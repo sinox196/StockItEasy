@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "StockItEasy",
+    "slug": "stockiteasy",
+    "scheme": "stockiteasy",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": { "image": "./assets/splash.png", "resizeMode": "contain", "backgroundColor": "#0F172A" },
+    "ios": {
+      "bundleIdentifier": "tn.stockiteasy.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "La caméra sert à scanner les codes-barres des produits. / Camera is used to scan product barcodes."
+      }
+    },
+    "android": {
+      "package": "tn.stockiteasy.app",
+      "adaptiveIcon": { "foregroundImage": "./assets/icon.png", "backgroundColor": "#0F172A" },
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-localization",
+      ["expo-camera", { "cameraPermission": "La caméra sert à scanner les codes-barres des produits." }],
+      ["expo-splash-screen", { "image": "./assets/splash.png", "imageWidth": 200, "resizeMode": "contain", "backgroundColor": "#0F172A" }]
+    ],
+    "experiments": { "typedRoutes": false },
+    "extra": { "apiUrl": "http://10.0.2.2:4000/api/v1" }
+  }
+}

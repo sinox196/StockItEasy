@@ -19,3 +19,5 @@ uploads/
 next-env.d.ts
 apps/web/test-results/
 apps/web/playwright-report/
+apps/mobile/dist-check/
+apps/mobile/expo-env.d.ts

@@ -757,7 +757,10 @@
     "keepMine": "Garder mon comptage",
     "discard": "Abandonner",
     "applied": "Appliqué",
-    "rejected": "Refusé"
+    "rejected": "Refusé",
+    "myValue": "Mon comptage",
+    "serverValue": "Valeur serveur",
+    "download": "Télécharger les données"
   },
   "mobile": {
     "home": "Accueil",

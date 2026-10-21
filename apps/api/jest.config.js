@@ -1,0 +1,7 @@
+/** Unit tests (no database). */
+module.exports = {
+  testMatch: ['<rootDir>/src/**/*.spec.ts'],
+  transform: { '^.+\\.ts$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.json' }] },
+  testEnvironment: 'node',
+  passWithNoTests: true,
+};

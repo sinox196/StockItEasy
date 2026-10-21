@@ -1,0 +1,15 @@
+{
+  "name": "@stockiteasy/design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "assets", "tailwind-preset.js"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node -e \"require('./dist')\"",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}

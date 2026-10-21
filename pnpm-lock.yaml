@@ -55,6 +55,9 @@ importers:
       nodemailer:
         specifier: 7.0.9
         version: 7.0.9
+      prisma:
+        specifier: 6.19.3
+        version: 6.19.3(typescript@5.9.3)
       reflect-metadata:
         specifier: 0.2.2
         version: 0.2.2
@@ -92,9 +95,6 @@ importers:
       jest:
         specifier: 30.2.0
         version: 30.2.0(@types/node@22.18.8)(ts-node@10.9.2(@types/node@22.18.8)(typescript@5.9.3))
-      prisma:
-        specifier: 6.19.3
-        version: 6.19.3(typescript@5.9.3)
       supertest:
         specifier: 7.1.4
         version: 7.1.4

@@ -1,15 +1,13 @@
-/** @type {import('next').NextConfig} */
-const API_URL = process.env.API_URL || 'http://localhost:4000';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  // Trace files from the monorepo root so workspace packages are included in the standalone build.
+  outputFileTracingRoot: path.join(path.dirname(fileURLToPath(import.meta.url)), '../../'),
   poweredByHeader: false,
-  // The browser talks to the API through this same origin, so the refresh-token
-  // cookie stays first-party and httpOnly.
-  async rewrites() {
-    return [{ source: '/api/v1/:path*', destination: `${API_URL}/api/v1/:path*` }];
-  },
   async headers() {
     return [
       {

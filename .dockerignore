@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/.next
+**/.expo
+**/dist-check
+**/.env
+**/coverage
+**/__pycache__
+.git
+apps/mobile

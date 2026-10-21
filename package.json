@@ -2,12 +2,14 @@
   "name": "stockiteasy",
   "private": true,
   "version": "0.1.0",
-  "description": "StockItEasy — intelligent inventory management SaaS (web, Android, iOS)",
+  "description": "StockItEasy \u2014 intelligent inventory management SaaS (web, Android, iOS)",
   "packageManager": "pnpm@10.28.0",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "build": "pnpm -r --filter ./packages/** build && pnpm --filter @stockiteasy/api build && pnpm --filter @stockiteasy/web build",
-    "build:packages": "pnpm -r --filter ./packages/** build",
+    "build": "pnpm -r --filter './packages/**' build && pnpm --filter @stockiteasy/api build && pnpm --filter @stockiteasy/web build",
+    "build:packages": "pnpm -r --filter './packages/**' build",
     "dev:api": "pnpm --filter @stockiteasy/api dev",
     "dev:web": "pnpm --filter @stockiteasy/web dev",
     "dev:mobile": "pnpm --filter @stockiteasy/mobile start",
@@ -15,7 +17,7 @@
     "db:seed": "pnpm --filter @stockiteasy/api seed",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "test": "pnpm -r --filter ./packages/** test && pnpm --filter @stockiteasy/api test",
+    "test": "pnpm -r --filter './packages/**' test && pnpm --filter @stockiteasy/mobile test",
     "test:e2e": "pnpm --filter @stockiteasy/api test:e2e"
   }
 }

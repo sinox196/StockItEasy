@@ -1,3 +1,4 @@
+import { existsSync } from 'fs';
 import { z } from 'zod';
 
 /** Environment configuration, validated once at startup. See apps/api/.env.example. */
@@ -30,8 +31,16 @@ export type Env = z.infer<typeof envSchema>;
 
 let cached: Env | undefined;
 
+function loadDotEnv() {
+  // Local development convenience: read apps/api/.env (existing variables win).
+  // Tests and containers configure the environment explicitly.
+  if (process.env.NODE_ENV === 'test' || !existsSync('.env')) return;
+  process.loadEnvFile('.env');
+}
+
 export function env(): Env {
   if (!cached) {
+    loadDotEnv();
     const parsed = envSchema.safeParse(process.env);
     if (!parsed.success) {
       // eslint-disable-next-line no-console

@@ -16,6 +16,8 @@ SaaS de gestion de stock multi-entreprise pour le marché tunisien (extensible),
 
 ## Démarrage rapide (local)
 
+> **Sous Windows**, suivre le guide pas à pas : [docs/WINDOWS.md](docs/WINDOWS.md) (installation de Node/pnpm/Docker, commandes PowerShell).
+
 ```bash
 pnpm install
 cp apps/api/.env.example apps/api/.env          # renseigner JWT_ACCESS_SECRET
@@ -36,6 +38,6 @@ Comptes de démonstration créés par le seed local (mot de passe = `SEED_DEMO_P
 ## Documentation
 
 - [Architecture](docs/ARCHITECTURE.md) · [Règles métier](docs/BUSINESS_RULES.md) · [API (OpenAPI)](docs/API.md)
-- [Lancement local](docs/LOCAL_SETUP.md) · [Mobile Android/iOS](docs/MOBILE.md) · [Déploiement](docs/DEPLOYMENT.md)
+- [Lancement local](docs/LOCAL_SETUP.md) · [Windows pas à pas](docs/WINDOWS.md) · [Mobile Android/iOS](docs/MOBILE.md) · [Déploiement](docs/DEPLOYMENT.md)
 - [Tests](docs/TESTING.md) · [Sécurité & conformité](docs/SECURITY.md)
 - **[État réel des fonctionnalités](docs/STATUS.md)** · [Journal de développement](docs/DEVLOG.md)
